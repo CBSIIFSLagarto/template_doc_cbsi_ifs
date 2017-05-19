@@ -166,6 +166,26 @@ Veja a seguir como inserir alguns elementos no seu texto.
 \end{algorithm}
 ```
 
+
+### Como inserir uma sigla:
+
+Caso queira adicionar uma sigla, como por exemplo IFS que significa Instituto Federal de Sergipe, abra o arquivo elementos-pre-textuais/lista-de-abreviaturas-e-siglas.tex e cole o seguinte código:
+
+```tex
+\newacronym{IFS}{IFS}{Instituto Federal de Sergipe}
+```
+Sendo:
+- O primeiro IFS corresponde a chave que representa a sigla;
+- O segundo IFS é a sigla propriamente dita
+- E o terceiro parâmetro corresponde à definição da sigla
+
+Um exemplo em um texto, é:
+
+```tex
+O \gls{IFS} está localizado em Sergipe.... Caso queira estudar o curso de Sistemas de Informação no \gls{IFS}, você deverá realizar a matrícula no Campus Lagarto.
+```
+Observe que o LaTeX consegue identificar se é o primeiro uso ou não.
+
 # Atenção
 
 O ueceTeX2 é fornecido gratuitamente e sem garantias e pode ser redistribuído livremente para fins acadêmicos. O ueceTeX2 é um produto extra-oficial e não está oficialmente vinculada à Universidade Estadual do Ceará - UECE.

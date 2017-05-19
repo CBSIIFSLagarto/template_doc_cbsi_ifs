@@ -169,7 +169,7 @@ Veja a seguir como inserir alguns elementos no seu texto.
 
 ### Como inserir uma sigla:
 
-Caso queira adicionar uma sigla, como por exemplo IFS que significa Instituto Federal de Sergipe, abra o arquivo elementos-pre-textuais/lista-de-abreviaturas-e-siglas.tex e cole o seguinte código:
+Caso queira adicionar uma sigla, como por exemplo IFS que significa Instituto Federal de Sergipe, abra o arquivo *elementos-pre-textuais/lista-de-abreviaturas-e-siglas.tex* e cole o seguinte código:
 
 ```tex
 \newacronym{IFS}{IFS}{Instituto Federal de Sergipe}

@@ -1,0 +1,13 @@
+\usepackage[nogroupskip,nonumberlist,acronym,automake]{glossaries}                % Permite fazer o glossario
+
+\newcommand{\dummyText}{
+	The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. 
+}
+
+\newcommand{\imprimirlistadeabreviaturasesiglas}[1][0]{ %
+	\printglossary[type=acronym,style=long,nonumberlist,title={Lista de Abreviaturas e Siglas\vspace{-0.3cm}}] %
+	\ifthenelse{1 = #1}{\pagebreak}{}
+}
+
+% Organiza e gera a lista de abreviaturas, simbolos e glossario
+\makeglossaries

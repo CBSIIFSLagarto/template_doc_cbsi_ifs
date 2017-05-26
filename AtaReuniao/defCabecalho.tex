@@ -1,0 +1,45 @@
+% custom footers and headers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\renewcommand{\footrulewidth}{1pt}
+
+\lhead{}
+\chead{
+	{\includegraphics[width=.1\textwidth]{brasao}} \\
+	{Ministério da Educação}\\
+	{Secretaria de Educação Profissional e Tecnológica}\\
+	{Instituto Federal de Educação, Ciência e Tecnologia de Sergipe} \\
+	{\deptoMM \space -- \deptoM \space -- Campus Lagarto}	
+}
+\rhead{}
+\lfoot{}
+\cfoot{
+	{\scriptsize \sffamily Rodovia Lourival Batista, Povoado Carro Quebrado}\\
+	{\scriptsize \sffamily CEP: 49400-000 - Telefone Geral (79) 3321-1500 - Lagarto - SE - Brasil}
+}
+\rfoot{
+	{\scriptsize \sffamily \vspace{2pt} Página \thepage / \pageref{LastPage}}
+ }
+
+\newcommand{\depto}[2]{
+	\newcommand{\deptoMM}{#1}
+	\newcommand{\deptoM}{#2}
+}
+
+\newcommand{\cabecalho}[1]{
+	%	\noindent
+	\hfill	
+	{\bf \textbf{Assunto}:}  #1		
+	\vspace{.2cm}
+	
+	\title{#1}
+	
+	% \vskip -5ex
+	
+	\linenumbers
+}
+
+
+
+

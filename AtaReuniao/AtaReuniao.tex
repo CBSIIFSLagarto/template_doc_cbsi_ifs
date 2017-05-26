@@ -1,0 +1,245 @@
+% [puro-uff-rfm: 1974] reunião do departamento de física e matemática
+% Nomes dos pontos de pauta:
+%   projeto de monitoria
+%   consulta para escolha de representantes aos conselhos da UFF
+%   vista ao projeto do regimento do colegiado de unidade
+%   condições de trabalho no Polo
+%   confraternização de fim de ano
+%   
+%   Aprovação do Parecer Conclusivo do Estágio Probatório do Prof. Reginaldo.
+%   Aprovação das datas e distribuição de aulas do Cálculo Zero
+
+\documentclass[12pt,a4paper]{ata} 
+\usepackage[brazil]{babel}
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc} 
+\usepackage{amssymb}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper, top=2.3in,bottom=1.2in,right=1in,left=1in,headheight=114.4pt]{geometry}
+
+
+\include{packages}
+\include{defCabecalho}
+\include{siglas}
+\include{listaPessoas}
+\depto{Coordenadoria de Sistemas de Informação}{CBSI}
+
+\usepackage{ifmtarg}
+
+\begin{document}
+
+\def\intriangles#1{$\blacktriangleleft$#1$\blacktriangleright$}
+\def\dontshowTs{\def\T##1{}}
+\def    \showTs{\def\T##1{\intriangles{##1}}}
+   
+        \showTs
+	 \dontshowTs
+
+\label{Data da reunião}
+\dia{06}
+\mes{12}
+\ano{2012}
+
+\label{Tipo da reunião}
+\deftiporeuniao{Ordinária}
+% Advérbio correspondente ao tipo da reunião.
+\deftiporeuniaoadv{ordinariamente}
+
+
+\label{Presidente da banca}
+% Quem presidiu a reunião (sem título).
+\defpresidiu{\gls{p.Pessoa3}}
+
+\label{Cargo do presidente da banca}
+% Cargo de quem presidiu a reunião.
+\defcargopresidiu{coordenador do curso}
+
+\label{Secretario}
+% Quem secretariou (sem título).
+\defsecretariou{\gls{p.Pessoa1}}
+
+\label{Lista Prof. Presentes}
+% Lista de presentes. NÃO terminar com ponto.
+\defpresentes{
+	\nomePessoa{p.Pessoa1}, 
+	\nomePessoa{p.Pessoa2}} %O último da lista deve ser acompanhado com o fecha }
+
+\label{Lista Prof. Justificados}
+% Lista de ausentes justificados. NÃO terminar com ponto.
+\defjustif{
+	\nomePessoa{p.Pessoa3},
+	{Pessoa convidada 01}}
+
+\label{Lista Prof. Ausentes}
+% Lista de ausentes. NÃO terminar com ponto.
+\defausentes{
+	\nomePessoa{p.Pessoa4},
+	{Pessoa convidada ausente}}
+
+\label{Cabecalho}
+%% Cabeçalho com quebras de linhas manuais. 
+%% Basicamente sempre o mesmo.
+%% O comando \hoje gera a data (em numerais). 
+\cabecalho{%
+	Ata da Reunião \tiporeuniao{} da  
+	Coordenação de Sistemas de Informação,
+	do Instituto de Federal de Sergipe,
+	Campus Lagarto
+	realizada em \hoje%
+}
+\label{Dica: Como adicionar um ponto}
+% Detalhamento da pauta. Cada ponto é um ambiente da forma
+%
+%    \begin{ponto}{Nome do ponto}
+%    
+%      Corpo do ponto.
+%    
+%    \end{ponto}
+%
+% O nome do ponto não deve terminar com pontuação. O corpo sim.
+% Quebras de linha e listas de itens podem ser inseridas à vontade,
+% mas a ata inteira será diagramada como um único parágrafo.
+\label{Dica: Adicionar o horário em que foi dito algo}
+% Para adicionar o tempo em que foi dito, usar:
+%
+%  \showTs % ativa a exibição do horário
+%  \begin{ponto}{Item 1 da ata de reunião
+%  \T{10:50} Falou que....
+%  \end{ponto}
+%  \dontshowTs
+%
+%  Isso permite que seja incluída o horário em que a fala foi realizada, sanbendo que
+%
+%  \dontshowTs - Desativa a exibição do horário
+%  \showTs - Ativa a exibição do horário
+
+\begin{ponto}{Indicação de uma pessoa para secretariar a reunião}
+  O~\prof \secretariou \space se ofereceu para secretariar a reunião.
+\end{ponto}
+
+\begin{ponto}{Aprovação da ata da reunião anterior}
+A ata da reunião anterior foi aprovada por unanimidade.
+\end{ponto}
+
+\begin{ponto}{Aprovação do Parecer Conclusivo de Estágio Probatório do
+  \prof \gls{p.Pessoa1}
+}
+
+\T{2:00} \T{2:13} A \profa \gls{p.Pessoa2} circula entre os presentes
+todos os pareceres de relatórios de estágio probatório do...
+
+\end{ponto}
+
+
+
+\begin{ponto}{Projetos de monitoria 2013}
+
+\dummyText
+
+\end{ponto}
+
+\begin{ponto}{Condições de trabalho no Polo}
+	\dummyText
+\end{ponto}
+
+\begin{ponto}{Solicitação de espaço físico para alunos}
+	\dummyText
+\end{ponto}
+
+\begin{ponto}{Solicitação de espaço físico para a montagem do laboratório
+    de microscopia de força atômica}
+\dummyText
+\end{ponto}
+
+
+\begin{ponto}{Aprovação das datas e distribuição de aulas do Cálculo Zero}
+	\dummyText
+\end{ponto}
+
+
+% antigos
+\begin{ponto}{Informes}
+
+  \begin{enumerate}
+
+  \item Falta d'água: \dummyText.
+
+  \item Aparelhos de ar-condicionado: \dummyText.
+
+  \item Papel~A$4$: \dummyText.
+
+  \item Marimbondos: \dummyText.
+
+  \item Princípio de incêndio em transformador: \dummyText.
+
+  \item Falta de informações: A~\profa \gls{p.Pessoa3} \dummyText.
+
+  \item Falecimento de aluno da Ciência da Computação: que isso não aconteça.
+
+  \item \dummyText. 
+
+  \item Estágio probatório do~\prof: o~\prof \gls{p.Pessoa2} informou que o~processo de aprovação do~estágio probatório do~\prof já foi homologado.
+
+  \item Apresentação de \dummyText.
+
+  \item Gratificação para chefia: \dummyText.
+
+  \end{enumerate}
+
+\end{ponto}
+
+\label{Aprovação em ata}
+\begin{ponto}{Aprovação de ata}
+  A~plenária aprovou a~ata da~reunião ordinária de~$11$ de~outubro
+  de~$2012$ por~unanimidade.
+\end{ponto}
+
+
+%   ____                             _               _        
+%  / ___|___  _ __ _ __   ___     __| | __ _    __ _| |_ __ _ 
+% | |   / _ \| '__| '_ \ / _ \   / _` |/ _` |  / _` | __/ _` |
+% | |__| (_) | |  | |_) | (_) | | (_| | (_| | | (_| | || (_| |
+%  \____\___/|_|  | .__/ \___/   \__,_|\__,_|  \__,_|\__\__,_|
+%                 |_|                                         
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Corpo da ata. Basicamente sempre o mesmo. Verificar se a pauta foi
+% aprovada por unanimidade. Se não houver faltantes, eliminar a(s)
+% linha(s) correspondente(s).
+\label{Introdução da ata}
+\hojeporextenso, reuniram-se \tiporeuniaoadv{} os professores da Coordenadoria de Sistemas de Informação (CBSI) do Instituto de Ciência e Tecnologia de Sergipe.
+%
+\presentes
+%
+%Compareceram os professores \presentes. 
+%
+\justificados
+%
+\ausentes
+%
+Abrindo a reunião, o \prof \presidiu, \cargopresidiu, apresentou a
+seguinte proposta de pauta, que foi aprovada por unanimidade pela
+plenária:
+%
+\pauta
+%
+A reunião se desenvolveu conforme se segue:
+% 
+\desenvolvimento
+% 
+Não havendo mais a tratar, a reunião foi encerrada, da qual eu,
+\secretariou, lavrei a presente ata, que vai assinada por mim e pelo
+chefe do departamento.
+%
+\end{document}
+
+
+
+\documentclass[oneside]{book}
+\usepackage[latin1]{inputenc}
+
+
+
+\begin{document}
+
+\end{document}

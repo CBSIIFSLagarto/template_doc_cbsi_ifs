@@ -263,15 +263,40 @@
 %  \newcommand{\presentes}{\unskip{} \unhbox\@presentes}%
 %}
 
+\newcommand{\listProfPresente}{\def \@listProfPresente}
+\newcommand{\imprimirListProfPresente}{\@listProfPresente}
 
 \label{Lista Prof. Presentes}
 \newcommand{\defpresentes}[1]{%
 	\newbox\@presentes%
 	\setbox\@presentes=\hbox{\ignorespaces #1\unskip}%	
+	\listProfPresente{#1}
 	\newcommand{\presentes}{
 		\ehIgual{#1}{} { Somente o \presidiu \space compareceu. }{Compareceram os professores \formatarLista{#1} \unskip{}.\unskip}
-	 }
+	 } 
+ 	\newcommand{\imprimirRegiaoAssinaturaPresentes}{\imprimirRegiaoAssinatura{#1}}
 }
+\label{Assinatura}
+%%%%%%%%%%%%%%%%%%%%%%%%%%% ASSINATURA
+
+\newcommand{\imprimirRegiaoAssinatura}[2][Lagarto]{
+	\begin{center}
+		#1, \today
+	\end{center}
+	\vspace{1cm}
+	
+	\foreach \member in {#2} {%
+		\assinatura{\member}
+	}%
+}     
+
+\newcommand{\assinatura}[2][7cm]{%
+	\begin{tabular}{@{}p{#1}@{}}
+		\space \hrule \\[0pt]
+		{\small \textit{#2}}
+	\end{tabular}
+}
+
 
 \label{Lista Prof. Ausentes}
 % Atenção: produz um espaço ANTES da lista. É intencional.

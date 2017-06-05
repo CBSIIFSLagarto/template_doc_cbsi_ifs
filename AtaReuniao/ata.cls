@@ -275,9 +275,18 @@
 		\ehIgual{#1}{} { Somente o \presidiu \space compareceu. }{Compareceram os professores \formatarLista{#1} \unskip{}.\unskip}
 	 } 
  	\newcommand{\imprimirRegiaoAssinaturaPresentes}{\imprimirRegiaoAssinatura{#1}}
+ 	\newcommand{\imprimirRegiaoAssinaturaSemDataELocal}{\regiaoAssinaturaSemDataELocal{#1}}
 }
 \label{Assinatura}
 %%%%%%%%%%%%%%%%%%%%%%%%%%% ASSINATURA
+
+\newcommand{\regiaoAssinaturaSemDataELocal}[1]{
+	\vspace{1cm}
+	
+	\foreach \member in {#1} {%
+		\assinatura{\member}
+	}%
+}   
 
 \newcommand{\imprimirRegiaoAssinatura}[2][Lagarto]{
 	\begin{center}
@@ -290,9 +299,9 @@
 	}%
 }     
 
-\newcommand{\assinatura}[2][7cm]{%
+\newcommand{\assinatura}[2][5cm]{%
 	\begin{tabular}{@{}p{#1}@{}}
-		\space \hrule \\[0pt]
+		\space \hrule \\[2pt]
 		{\small \textit{#2}}
 	\end{tabular}
 }

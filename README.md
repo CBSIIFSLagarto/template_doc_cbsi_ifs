@@ -97,10 +97,11 @@ Veja a seguir como inserir alguns elementos no seu texto.
 ```tex
 \begin{figure}[h!]
 	\centering
-	\Caption{\label{fig:label_da_figura} Legenda da Figura}	
+
 	\UECEfig{}{
 	    \includegraphics[width=8cm]{figuras/figura-1}
 	}{
+	    \Caption{\label{fig:label_da_figura} Legenda da Figura}	
 	    \Fonte{Elaborado pelo autor}
 	}	
 \end{figure}

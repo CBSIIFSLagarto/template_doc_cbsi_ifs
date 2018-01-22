@@ -1,8 +1,11 @@
-![alt tag](https://raw.githubusercontent.com/thiagodnf/uecetex2/master/figuras/uecetex2-logo.png)
 
 # O que é?
 
-O **ueceTeX2** é um projeto baseado no [abnTeX2] desenvolvido para auxiliar os alunos da Universidade Estadual do Ceará - UECE em seus trabalhos de monografias de graduação, dissertações de mestrado e teses de doutorado. Embora tenha sido escrita para ser utilizada principalmente pelos alunos da Computação, a ueceTeX2 é suficientemente configurável e facilmente adaptável para ser utilizada em praticamente todos os cursos da UECE. Espera-se que o projeto seja um modelo de trabalho acadêmico que implemente todas as exigências das normas da ABNT sem a necessidade de se preocupar com o estilo ou formatação do documento.
+O **ifsTeX2** é um projeto baseado no **ueceTeX2** e no [abnTeX2] desenvolvido para auxiliar os alunos e servidores do Insitituto Federal de Sergipe - IFS em seus trabalhos de monografias de graduação, dissertações de mestrado, teses de doutorado e atividades laborais. 
+Embora tenha sido escrita para ser utilizada principalmente pelos alunos da Computação, a ifsTeX2 é suficientemente configurável e facilmente adaptável para ser utilizada em praticamente todos os cursos do IFS. 
+Atualemente é um modelo adotado pela coordenação de sistemas de informação durante o desenvolvimento de trabalhos acadêmicos que implemente todas as exigências das normas da ABNT sem a necessidade de se preocupar com o estilo ou formatação do documento.
+
+Dentro deste pacote são ofertados os seguintes modelos:
 
 ### Modelos Disponíveis
 
@@ -16,13 +19,24 @@ O **ueceTeX2** é um projeto baseado no [abnTeX2] desenvolvido para auxiliar os 
 **Qualificações**
 
  - Qualificação para Mestrado Acadêmico e Profissional
+ 
+ **Ata de reuião**
+ 
+ - Atas de reunião
 
 # Por onde começo?
-Para utilizar o ueceTeX2 você precisa seguir os seguintes passos:
+Para utilizar o ifsTeX2 você precisa seguir os seguintes passos:
 
-1. Clique [aqui](https://github.com/thiagodnf/uecetex2/archive/master.zip) para baixar o projeto
+1. Baixar o projeto
 2. Descompacte o arquivo no diretório onde vc deseja guardar os arquivos do seu trabalho
 3. Crie o seu texto a partir do arquivo *documento.tex* distribuído no arquivo baixado. O arquivo possui comentários e é, em certa medida, auto-explicativo.
+
+Para ata de reunião:
+
+1. Preencher o arquivo listaPessoas.tex com a lista de pessoas conforme modelo
+3. Fazer uma cópia do arquivo AtaReuniao.tex renomeando informando a data e título como parte do nome do arquivo. Observe as necessidades dos labels que estão definidos nele.
+3.1 Redigir a ata e sempre que for citar uma pessoa usar o comando \gls{p.NomePessoa}. Sendo p.NomePessoa o apelido definido no arquivo listaPessoas.tex
+
 
 > Você é iniciante em LaTeX ou em abnTeX2? Clique [aqui](https://code.google.com/p/abntex2/wiki/PorOndeComecar) para acessar a página desenvolvida pela equipe do abnTeX2. Nesta página é possível acessar diversos links sobre o LaTeX e sobre o abnTeX2 como, por exemplo, a história do LaTeX e alguns minicursos desenvolvidos em outras universidades
 

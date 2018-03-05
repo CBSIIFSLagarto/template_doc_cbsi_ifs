@@ -1,3 +1,6 @@
+% !TeX encoding = UTF-8
+% !TeX root = ../documento.tex
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Customizações do abnTeX2 (http://abnTeX2.googlecode.com)           %%
 %% para o curso de Bacharelado em Sistemas de Informação do           %%
@@ -5,7 +8,7 @@
 %% criada por Gilson Pereira	                                      %%
 %% e atualizada por Francisco Rodrigues								  %%	
 %% baseado na customização da Universidade Estadual do Ceara - UECE   %%
-%% criada por Thiago Nascimento (versão @6e662036 de 22/02/2017)      %%
+%% criada por Thiago Nascimento (versão @931d44a)                     %%
 %%                                                                    %%
 %% This work may be distributed and/or modified under the             %% 
 %% conditions of the LaTeX Project Public License, either version 1.3 %%
@@ -34,7 +37,7 @@
 %%             Definições              %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Importa o arquivo com as entradas do glossario
+% Importa o arquivo com as entradas do glassario
 \input{elementos-pos-textuais/glossario}
 \input{elementos-pre-textuais/lista-de-abreviaturas-e-siglas}
 
@@ -123,11 +126,48 @@
 % Retira espaço extra obsoleto entre as frases.
 %\frenchspacing
 
+\newcommand{\listofquadrosname}{Lista de Quadros}
+\newcommand{\glossarioname}{GLOSS\'ARIO}
+\newcommand{\teoremaname}{Teorema}
+\newcommand{\proposicaoname}{Proposição}
+\newcommand{\exemploname}{Exemplo}
+\newcommand{\definicaoname}{Definição}
+\newcommand{\questaoname}{Questão}
+
 \addto\captionsbrazil{
 	\renewcommand{\bibname}{REFER\^ENCIAS}
 	\renewcommand{\indexname}{\'INDICE}
 	\renewcommand{\contentsname}{Sum\'ario \vspace{5pt}}
 	\renewcommand{\listadesimbolosname}{Lista de Símbolos}
+	\renewcommand{\lstlistingname}{Código-fonte}% Listing -> Algorithm
+	\renewcommand{\lstlistlistingname}{Lista de Códigos-Fontes}%
+	\renewcommand{\listalgorithmcfname}{Lista de Algoritmos}%
+	\renewcommand{\algorithmcfname}{Algoritmo}%
+	\renewcommand{\cftquadroname}{Quadro\space}%
+	\renewcommand{\apendicesname}{AP\^ENDICES}%
+	\renewcommand{\anexosname}{ANEXOS}%
+}
+
+\addto\captionsenglish{% ingles
+	\renewcommand{\lstlistingname}{Code}% Listing -> Algorithm
+	\renewcommand{\lstlistlistingname}{List of Source Codes}%
+	\renewcommand{\listalgorithmcfname}{Lists of Algorithms}%
+	\renewcommand{\algorithmcfname}{Algorithm}%
+	\renewcommand{\cftquadroname}{Chart\space}%
+	\renewcommand{\listofquadrosname}{List of Charts}%
+	\renewcommand{\apendicesname}{APPENDICES}%
+	\renewcommand{\anexosname}{ANNEXES}%
+	\renewcommand{\glossarioname}{GLOSSARY}%
+	\def\tableautorefname{Table}
+	\def\figureautorefname{Figure}
+	\def\sectionautorefname{Section}
+	\def\chapterautorefname{Chapter}
+	\def\subsectionautorefname{Subsection}
+	\renewcommand{\teoremaname}{Theorem}
+	\renewcommand{\proposicaoname}{Proposition}
+	\renewcommand{\exemploname}{Example}
+	\renewcommand{\definicaoname}{Definition}
+	\renewcommand{\questaoname}{Question}
 }
 
 % Por algum motivo, o algorithm2e estava pegando algumas palavras do espanhol.
@@ -161,9 +201,6 @@
 \newcommand{\SetSpacedAlgorithm}{
 	\linespread{1.35}\selectfont
 }
-
-% Altera o titulo para esse
-\renewcommand{\listalgorithmcfname}{Lista de Algoritmos}%
 
 % Espaco entre o caption e o algoritmo
 %\SetAlCapSkip{\onelineskip}
@@ -945,19 +982,20 @@
 \newcommand{\estacontido}{\subset}
 \newtheorem{afirmacao}{{\sc Afirma\c{c}\~{a}o}}[section]
 \newtheorem{argumento}{\sc Argumento~}[section]
-\newtheorem{teo}{Teorema}[section]
+\newtheorem{teo}{\teoremaname}[section]
 \newtheorem{lema}{Lema}[section]
 \newtheorem{cor}{Corolário}[section]
-\newtheorem{prop}[teo]{Proposição}
+\newtheorem{prop}[teo]{\proposicaoname}
 \newtheorem{conjec}{Conjectura}[section]
 \newtheorem{premissa}{Premissa}[chapter]
 \newtheorem{procedimento}{Procedimentos}[section]
 \newtheorem{heuristica}{Heurística}[section]
 \newtheorem{axioma}{Axioma}[section]
-\newtheorem{exem}{Exemplo}
-\newtheorem{xdefinicao}{Definição}[section]
-\newtheorem{cdefinicao}{Definição}[chapter]
+\newtheorem{exem}{\exemploname}
+\newtheorem{xdefinicao}{\definicaoname}[section]
+\newtheorem{cdefinicao}{\definicaoname}[chapter]
 \newtheorem{propriedade}{Propriedade}[chapter]
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%             Questoes                %%
@@ -967,7 +1005,7 @@
 \newcounter{quest}
 
 \newenvironment{questao}{ %
-	\begin{list}{\textbf{Questão \arabic{quest}.}}{\usecounter{quest} %
+	\begin{list}{\textbf{\questaoname~\arabic{quest}.}}{\usecounter{quest} %
 		\setlength{\labelwidth}{-2mm} \setlength{\parsep}{0mm} %
 		\setlength{\topsep}{0mm} \setlength{\leftmargin}{0mm}} %
 	\renewcommand{\labelenumi}{(\alph{enumi})}	%
@@ -1070,7 +1108,7 @@
 }
 
 \newcommand{\imprimirresumo}[1]{ %
-	\begin{resumo} %
+	\begin{resumo}[Resumo] %
 		\input{#1} %
 	\end{resumo} %
 }
@@ -1091,10 +1129,10 @@
 
 % Novo list of (listings) para QUADROS
 
-\newcommand{\quadroname}{Quadro}
-\newcommand{\listofquadrosname}{Lista de Quadros}
+%\newcommand{\quadroname}{Quadro}
+%\newcommand{\listofquadrosname}{Lista de Quadros}
 
-\newfloat[chapter]{quadro}{loq}{\quadroname}
+\newfloat[chapter]{quadro}{loq}{\cftquadroname}
 \newlistof{listofquadros}{loq}{\listofquadrosname}
 \newlistentry{quadro}{loq}{0}
 
@@ -1116,9 +1154,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Comandos para formatar a exibicao de codigos-fonte
-
-\renewcommand{\lstlistingname}{Código-fonte}% Listing -> Algorithm
-\renewcommand{\lstlistlistingname}{Lista de Códigos-Fonte}%
 
 
 %\AtBeginDocument{ %
@@ -1172,7 +1207,7 @@
 \renewcommand\cftlstlistingpresnum{\lstlistingname~}
 \settowidth\mylen{\cftlstlistingpresnum\cftlstlistingaftersnum}
 \addtolength\cftlstlistingnumwidth{\mylen} %
-\renewcommand\cftlstlistingaftersnum{\hfill\textendash\hfill}
+\renewcommand\cftlstlistingaftersnum{~\hfill\textendash\hfill}
 
 
 \newcommand{\imprimirlistadecodigosfonte}{ %
@@ -1286,9 +1321,10 @@
 }
 
 \newcommand{\imprimirglossario}{ %
-	\glossarystyle{glossario-uece} %	
-	\printglossary[title=GLOSSÁRIO,toctitle=GLOSSÁRIO] %
-	\addcontentsline{toc}{chapter}{GLOSSÁRIO}
+	%\glossarystyle{glossario-uece} %	
+	\setglossarystyle{glossario-uece} %compatibilidade com o sharelatex	
+	\printglossary[title=\glossarioname,toctitle=\glossarioname] %
+	\addcontentsline{toc}{chapter}{\glossarioname}
 }
 
 
@@ -1313,9 +1349,9 @@
 % O nome APÊNDICES deve vir em página distinta, redigido em letras maiúsculas, centralizado, negritado, tamanho da fonte 12.
 \newcommand{\imprimirpaginaapendices}{ %
 	\newpage %
-	\addcontentsline{toc}{chapter}{AP\^ENDICES} %
+	\addcontentsline{toc}{chapter}{\apendicesname} %
 	\begin{vplace}[0.7] %
-		\centering\textbf{AP\^ENDICES} %
+		\centering\textbf{\apendicesname} %
 	\end{vplace} %
 	\clearpage
 }
@@ -1413,9 +1449,9 @@
 % O nome ANEXOS deve vir em página distinta, redigido em letras maiúsculas, centralizado, negritado, tamanho da fonte 12.
 \newcommand{\imprimirpaginaanexo}{ %
 	\newpage %
-	\addcontentsline{toc}{chapter}{ANEXOS} %
+	\addcontentsline{toc}{chapter}{\anexosname} %
 	\begin{vplace}[0.7] %
-		\centering\textbf{ANEXOS} %
+		\centering\textbf{\anexosname} %
 	\end{vplace} %
 	\clearpage
 }
@@ -1489,4 +1525,21 @@
 	\oldcontentsline{#1}{#2}%
 }%
 }
+\makeatother
+
+\makeatletter
+\renewcommand{\fonte}[2][\fontename]{%
+	\M@gettitle{#2}%
+	\memlegendinfo{#2}%
+	\par
+	\begingroup
+	\@parboxrestore
+	\if@minipage
+	\@setminipage
+	\fi
+	\ABNTEXfontereduzida
+	\configureseparator
+	\captiondelim{\ABNTEXcaptionfontedelim}
+	\@makecaption{\ABNTEXfontereduzida #1}{\ignorespaces\ABNTEXfontereduzida #2}\par
+	\endgroup}
 \makeatother

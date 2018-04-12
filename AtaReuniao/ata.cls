@@ -140,11 +140,11 @@
 	\foreach \member in {#1} {%
 		\stepcounter{CurrentListMemberCount}%
 		\IfEq{\the\value{CurrentListMemberCount}}{1}{%
-			\FormatFirstListMember{\member}%
+			\unskip~\FormatFirstListMember{\member} \unskip%
 		}{%
 			\IfEq{\the\value{CurrentListMemberCount}}{\the\value{TotalNumberOfListMembers}}{%
-				\unskip\space e \FormatLastListMember{\member}%
-			}{\space , \FormatMiddleListMember{\member}}
+				\unskip\space e \FormatLastListMember{\member}\unskip%
+			}{\unskip, \FormatMiddleListMember{\member} \unskip}
 		}%
 	}%
 }%
@@ -202,7 +202,7 @@
   \expandafter\setbox\csname mes10\endcsname=\hbox{outubro}%
   \expandafter\setbox\csname mes11\endcsname=\hbox{novembro}%
   \expandafter\setbox\csname mes12\endcsname=\hbox{dezembro}%
-  \ifthenelse{\the@dia=1}{Ao}{Aos}
+  %\ifthenelse{\the@dia=1}{Ao}{Aos}
   $\arabic{@dia}$
   de 
   \expandafter\unhbox\csname mes\the@mes\endcsname
@@ -272,7 +272,8 @@
 	\setbox\@presentes=\hbox{\ignorespaces #1\unskip}%	
 	\listProfPresente{#1}
 	\newcommand{\presentes}{
-		\ehIgual{#1}{} { Somente o \presidiu \space compareceu. }{Compareceram os professores \formatarLista{#1} \unskip{}.\unskip}
+		\ehIgual{#1}{} { Somente o \presidiu \space compareceu. }
+		{ \unskip \unskip Compareceram os professores \formatarLista{#1}\unskip.\unskip}
 	 } 
  	\newcommand{\imprimirRegiaoAssinaturaPresentes}{\imprimirRegiaoAssinatura{#1}}
  	\newcommand{\imprimirRegiaoAssinaturaSemDataELocal}{\regiaoAssinaturaSemDataELocal{#1}}
@@ -290,19 +291,19 @@
 
 \newcommand{\imprimirRegiaoAssinatura}[2][Lagarto]{
 	\begin{center}
-		#1, \today
+		#1, \hojeporextenso.
 	\end{center}
-	\vspace{1cm}
-	
+	\vspace{1cm}	
 	\foreach \member in {#2} {%
 		\assinatura{\member}
 	}%
 }     
 
-\newcommand{\assinatura}[2][5cm]{%
+\newcommand{\assinatura}[2][8cm]{%
 	\begin{tabular}{@{}p{#1}@{}}
-		\space \hrule \\[2pt]
-		{\small \textit{#2}}
+		\space \hrule 
+		{\small \textit{#2} } 
+		\space \\[5pt]
 	\end{tabular}
 }
 
@@ -314,7 +315,7 @@
   \setbox\@ausentes=\hbox{#1}%
   %\newcommand{\ausentes}{\unskip\unhbox\@ausentes\unskip}%
   \newcommand{\ausentes}{
-  	\ehDiferente{#1}{} {\space Faltaram os professores \unskip{} \formatarLista{#1}.}{}
+  	\ehDiferente{#1}{} {\unskip\space Faltaram os professores \unskip{} \formatarLista{#1}.\unskip}{\unskip}
   }
 }
 
@@ -324,7 +325,7 @@
   \newbox\@justificados%
   \setbox\@justificados=\hbox{#1}%
   \newcommand{\justificados}{
-  	\ehDiferente{#1}{} {\space Justificaram ausência os professores  \formatarLista{#1}.}{}  	
+  	\ehDiferente{#1}{} {\unskip\space Justificaram ausência os professores  \formatarLista{#1}.\unskip}{\unskip}  	
   }
 }
 

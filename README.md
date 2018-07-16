@@ -2,8 +2,8 @@
 
 - [Sobre](#sobre)
 - [Conteúdo](#conte%C3%BAdo)
-	- [Construção de atas](#constru%C3%A7%C3%A3o-de-atas)
-	- [Construção de TCC](#constru%C3%A7%C3%A3o-de-tcc)
+    - [Construção de atas](#constru%C3%A7%C3%A3o-de-atas)
+    - [Construção de TCC](#constru%C3%A7%C3%A3o-de-tcc)
 - [Contribuição](#contribui%C3%A7%C3%A3o)
 - [Agradecimentos](#agradecimentos)
 
@@ -56,7 +56,8 @@ Ver readme da pasta.
 
 # Contribuição
 
-Você também pode contribuir colaborando com novos templates,reportando erros ou sugerindo atualizações. Clone o repositório e crie seu *Pull request*.
+* Registre seu pedido/erro [aqui](https://bitbucket.org/frchicoifs/template_doc_cbsi_ifs_latex/issues?status=new&status=open).
+* Você também pode contribuir colaborando com novos templates,reportando erros ou sugerindo atualizações. Clone o repositório e crie seu *Pull request*.
 
 # Agradecimentos
 

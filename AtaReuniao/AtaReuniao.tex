@@ -29,11 +29,11 @@
 \begin{document}
 
 \def\intriangles#1{$\blacktriangleleft$#1$\blacktriangleright$}
-\def\dontshowTs{\def\T##1{}}
+\def\dontshowTs{\def\TE##1{}}
 \def    \showTs{\def\TE##1{\intriangles{##1}}}
    
-        \showTs
-	 \dontshowTs
+\showTs % Mostrar o horário em que foi dito
+\dontshowTs % Ocultar horário 
 
 \label{Data da reunião}
 \dia{12}
@@ -118,14 +118,14 @@
 \end{ponto}
 
 \begin{ponto}{Aprovação da ata da reunião anterior}
-A ata da reunião anterior foi aprovada por unanimidade.
+\TE{2:00}  A ata da reunião anterior foi aprovada por unanimidade.
 \end{ponto}
 
 \begin{ponto}{Aprovação do Parecer Conclusivo de Estágio Probatório do
   \prof \gls{p.Pessoa1}
 }
 
-\T{2:00} \T{2:13} A \profa \gls{p.Pessoa2} circula entre os presentes
+\TE{2:13} A \profa \gls{p.Pessoa2} circula entre os presentes
 todos os pareceres de relatórios de estágio probatório do...
 
 \end{ponto}

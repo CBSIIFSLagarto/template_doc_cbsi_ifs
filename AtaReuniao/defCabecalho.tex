@@ -1,5 +1,6 @@
 % custom footers and headers
 \usepackage{fancyhdr}
+\usepackage{titling}
 \pagestyle{fancy}
 
 \renewcommand{\footrulewidth}{1pt}
@@ -15,8 +16,9 @@
 \rhead{}
 \lfoot{}
 \cfoot{
-	{\scriptsize \sffamily Rua Cauby, nº 523, Bairro Jardim Campo Novo}\\
-	{\scriptsize \sffamily CEP: 49400-000 - Telefone Geral (79) 3321-1500 - Lagarto - SE - Brasil}
+	{\scriptsize \sffamily \thetitle na }	
+	{\scriptsize \sffamily Rua Cauby, nº 523, Bairro Jardim Campo Novo.}
+	{\scriptsize \sffamily CEP 49400-000. \\ Lagarto/SE}
 }
 \rfoot{
 	{\scriptsize \sffamily \vspace{2pt} Página \thepage / \pageref{LastPage}}
@@ -34,7 +36,7 @@
 	\vspace{.2cm}
 	
 	\title{#1}
-	
+		
 	% \vskip -5ex
 	
 	\linenumbers

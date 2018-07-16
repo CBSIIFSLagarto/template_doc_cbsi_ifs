@@ -32,7 +32,7 @@
 
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
 \ProvidesClass{ata}
-  [2012/11/21 v1.0 Ata de Reunião Departamental -- fnaufel at gmail.com]
+%  [2012/11/21 v1.0 Ata de Reunião Departamental -- fnaufel at gmail.com]
 
 
 %%%%%%%%%% Pacotes necessários:
@@ -140,11 +140,11 @@
 	\foreach \member in {#1} {%
 		\stepcounter{CurrentListMemberCount}%
 		\IfEq{\the\value{CurrentListMemberCount}}{1}{%
-			\unskip~\FormatFirstListMember{\member} \unskip%
+			\FormatFirstListMember{\member}%
 		}{%
 			\IfEq{\the\value{CurrentListMemberCount}}{\the\value{TotalNumberOfListMembers}}{%
-				\unskip\space e \FormatLastListMember{\member}\unskip%
-			}{\unskip, \FormatMiddleListMember{\member} \unskip}
+				\unskip\space e \FormatLastListMember{\member}%
+			}{\unskip, \FormatMiddleListMember{\member}}
 		}%
 	}%
 }%
@@ -202,12 +202,48 @@
   \expandafter\setbox\csname mes10\endcsname=\hbox{outubro}%
   \expandafter\setbox\csname mes11\endcsname=\hbox{novembro}%
   \expandafter\setbox\csname mes12\endcsname=\hbox{dezembro}%
-  %\ifthenelse{\the@dia=1}{Ao}{Aos}
+  \ifthenelse{\the@dia=1}{Ao}{Aos}
   $\arabic{@dia}$
   de 
   \expandafter\unhbox\csname mes\the@mes\endcsname
   \ de
   $\arabic{@ano}$%
+}
+
+\newcommand{\hojeporextensoSemAos}{%
+	% Nomes dos meses.
+	% É preciso defini-los aqui dentro deste \newcommand, para que 
+	% apareçam com o font correto (Concrete ou não).
+	\expandafter\newbox\csname mes1\endcsname%
+	\expandafter\newbox\csname mes2\endcsname%
+	\expandafter\newbox\csname mes3\endcsname%
+	\expandafter\newbox\csname mes4\endcsname%
+	\expandafter\newbox\csname mes5\endcsname%
+	\expandafter\newbox\csname mes6\endcsname%
+	\expandafter\newbox\csname mes7\endcsname%
+	\expandafter\newbox\csname mes8\endcsname%
+	\expandafter\newbox\csname mes9\endcsname%
+	\expandafter\newbox\csname mes10\endcsname%
+	\expandafter\newbox\csname mes11\endcsname%
+	\expandafter\newbox\csname mes12\endcsname%
+	\expandafter\setbox\csname mes1\endcsname=\hbox{janeiro}%
+	\expandafter\setbox\csname mes2\endcsname=\hbox{fevereiro}%
+	\expandafter\setbox\csname mes3\endcsname=\hbox{março}%
+	\expandafter\setbox\csname mes4\endcsname=\hbox{abril}%
+	\expandafter\setbox\csname mes5\endcsname=\hbox{maio}%
+	\expandafter\setbox\csname mes6\endcsname=\hbox{junho}%
+	\expandafter\setbox\csname mes7\endcsname=\hbox{julho}%
+	\expandafter\setbox\csname mes8\endcsname=\hbox{agosto}%
+	\expandafter\setbox\csname mes9\endcsname=\hbox{setembro}%
+	\expandafter\setbox\csname mes10\endcsname=\hbox{outubro}%
+	\expandafter\setbox\csname mes11\endcsname=\hbox{novembro}%
+	\expandafter\setbox\csname mes12\endcsname=\hbox{dezembro}%
+	\ifthenelse{\the@dia=1}{}{}
+	$\arabic{@dia}$
+	de 
+	\expandafter\unhbox\csname mes\the@mes\endcsname
+	\ de
+	$\arabic{@ano}$%
 }
 
 
@@ -272,8 +308,7 @@
 	\setbox\@presentes=\hbox{\ignorespaces #1\unskip}%	
 	\listProfPresente{#1}
 	\newcommand{\presentes}{
-		\ehIgual{#1}{} { Somente o \presidiu \space compareceu. }
-		{ \unskip \unskip Compareceram os professores \formatarLista{#1}\unskip.\unskip}
+		\ehIgual{#1}{} { Somente o \presidiu \space compareceu. }{Compareceram os professores \formatarLista{#1} \unskip{}.\unskip}
 	 } 
  	\newcommand{\imprimirRegiaoAssinaturaPresentes}{\imprimirRegiaoAssinatura{#1}}
  	\newcommand{\imprimirRegiaoAssinaturaSemDataELocal}{\regiaoAssinaturaSemDataELocal{#1}}
@@ -291,7 +326,7 @@
 
 \newcommand{\imprimirRegiaoAssinatura}[2][Lagarto]{
 	\begin{center}
-		#1, \hojeporextenso.
+		#1, \hojeporextensoSemAos.
 	\end{center}
 	\vspace{1cm}	
 	\foreach \member in {#2} {%
@@ -315,7 +350,7 @@
   \setbox\@ausentes=\hbox{#1}%
   %\newcommand{\ausentes}{\unskip\unhbox\@ausentes\unskip}%
   \newcommand{\ausentes}{
-  	\ehDiferente{#1}{} {\unskip\space Faltaram os professores \unskip{} \formatarLista{#1}.\unskip}{\unskip}
+  	\ehDiferente{#1}{} {\space Faltaram os professores \unskip{} \formatarLista{#1}.}{}
   }
 }
 
@@ -325,7 +360,7 @@
   \newbox\@justificados%
   \setbox\@justificados=\hbox{#1}%
   \newcommand{\justificados}{
-  	\ehDiferente{#1}{} {\unskip\space Justificaram ausência os professores  \formatarLista{#1}.\unskip}{\unskip}  	
+  	\ehDiferente{#1}{} {\space Justificaram ausência os professores  \formatarLista{#1}.}{}  	
   }
 }
 

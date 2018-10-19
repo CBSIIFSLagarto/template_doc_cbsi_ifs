@@ -1,0 +1,137 @@
+% Fundamentos Matemáticos para Computação 1 - 2015.2
+% Avaliação 2: Teoria dos Números, Congruência
+% Autor: Patrick Terrematte
+
+\documentclass[11pt,a4paper]{article}
+\usepackage{../libs/formatacaoCSharp} % usando formatação de código C#
+\usepackage[utf8]{inputenc}     % Comentar para compilar no windows
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage[document]{ragged2e}
+\usepackage{outlines}
+\renewcommand{\theenumi}{\arabic{enumi}. }
+\renewcommand{\labelenumi}{\theenumi}
+
+\renewcommand{\theenumii}{\alph{enumii}. }
+\renewcommand{\labelenumii}{\theenumii}
+
+\renewcommand{\theenumiii}{\roman{enumiii}. }
+\renewcommand{\labelenumiii}{\theenumiii}
+
+\renewcommand{\theenumiv}{\arabic{enumiv}) }
+\renewcommand{\labelenumiv}{\theenumiv}
+
+\usepackage{xspace}
+\usepackage[brazil]{babel}
+%\usepackage[latin1]{inputenc}
+\usepackage{amsfonts, amssymb,amsmath}
+\usepackage{array,booktabs}
+\usepackage{proof}
+\usepackage{fancyhdr}
+ \usepackage{paralist}
+%\usepackage[pdftex=true,pagebackref=true,bookmarks=true,bookmarksnumbered=true,pdffitwindow=true]{hyperref}
+\usepackage{hyperref}
+\usepackage{marginnote}
+%\usepackage[top=Bcm, bottom=Hcm, outer=Ccm, inner=Acm, heightrounded, marginparwidth=Ecm, marginparsep=Dcm]{geometry}
+\usepackage{comment}
+
+
+\renewcommand{\b}{\textbf}
+\newcommand{\noi}{\noindent}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+
+\setlength{\textwidth}{170mm}%
+\setlength{\textheight}{279mm}%
+\setlength{\topmargin}{-30mm}%
+%\setlength{\bottommargin}{ \,}%
+\setlength{\oddsidemargin}{-10mm}
+\setlength{\evensidemargin}{-20mm}%
+
+
+\begin{document}
+	
+
+	
+\frenchspacing
+\begin{center}
+    \begin{minipage}{1.7cm}
+		\begin{center}
+			\includegraphics[height=2.0cm]{../libs/logo-ifs-micro.png}
+		\end{center}
+	\end{minipage}
+	\begin{minipage}{11.4cm}
+		\begin{center}
+				{\small \textsc{Instituto Federal de Sergipe}			\\
+						  \textsc{Bacharelado em Sistemas de Informação} \\
+                         \textbf{Disciplina:} Estrutura de Dados I\hspace{.65cm}\textbf{Semestre:} 2018.2\\
+                          \textsc{Professor: Francisco Rodrigues Santos}\\
+                }
+		\end{center}
+	\end{minipage}
+	\begin{minipage}{1.6cm}
+		\begin{center}
+			\includegraphics[height=2cm]{../libs/CBSI-logo.jpg}
+		\end{center}
+	\end{minipage}
+\end{center}
+
+
+{\sf
+  \begin{center}
+    \Large \textbf{--- Lista Encadeada Circular ---}%
+  \end{center}
+}\bigskip
+
+\setlength{\marginparwidth}{5cm}
+\small \noindent \textbf{Nome:}\hspace{0.3cm}\hrulefill \hrulefill
+
+\reversemarginpar
+\thispagestyle{empty}\bigskip
+
+%\noindent - {\bf Todas as resoluções devem incluir os cálculos e raciocínios usados para obter a solução.}
+
+%\noindent - Há um ponto extra distribuido na avaliação.
+
+%\noindent - Não é necessário grampear as avaliações.
+
+%\noindent - Escreva as respostas em apenas um lado de cada folha.
+%\noindent -  {\bf Mantenha as respostas em sequência.}
+
+%\noindent -  {\bf No cabeçalho da folha de rascunho, \underline{escreva seu nome}.}
+
+%\noindent -  {\bf No rodapé direito, confira a ordem das folhas, e escreva \underline{``Página $n$ de $m$''}, para $n$ e $m \in \N$.}
+
+%\noindent -  {\bf Se for o caso, consideraremos valores já calculados em outras questões, basta indicar e justificar.}
+
+
+%\noindent -  {\bf Os códigos deverão ser enviados para o \emph{bitbucket} }
+
+\noindent -  {\bf É permitido o uso de códigos próprios.}
+
+\noindent -  {\bf Não será permitido o uso de coleções implementadas pelo Java, como ArrayList.}
+
+
+%\lstinputlisting[language=java, caption=TAD Lista - considere a complexidade de todos estes métodos sendo igual a 1]{../codigos2017/Listas/src/main/java/TADLista.java}
+
+
+\begin{outline}[enumerate]
+	\1 Elabore um programa utilizando lista encadeada circular para gerenciar a lista de pessoas que estão cadastradas para jogar no arcade.
+	
+	Sabe-se ainda que: 
+	\2 É possível adicionar ou remover elementos em uma lista que já está em uso;
+	\2 É mantido o registro de quantas vezes uma pessoa foi chamada para jogar;
+	\2 Quando o próximo jogador é chamado, o atual vai para o final da lista;
+
+	\1 O sistema deverá oferecer a opção no menu para:
+	\2 obter o próximo jogador através do uso do método \codef{getProximoJogador(): Pessoa} da \codef{lista};
+	\2 Remover um jogador (através do nome);
+	\2 Adicionar um jogador;
+	\2 Pesquisar quantas pessoas estão na frente de um determinado jogador;
+	\2 Listar os próximos 3 jogadores;	
+\end{outline}
+
+\begin{flushright}	
+%Boa prova!
+\end{flushright}
+\end{document}

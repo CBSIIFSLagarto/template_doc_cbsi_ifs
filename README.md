@@ -7,7 +7,7 @@
     - [Construção de TCC](#construção-de-tcc)
     - [Construção de Poster](#construção-de-poster)
 - [Contribuição](#contribuição)
-- [Agradecimentos](#agradecimentos)
+- [Agradecimentos / Referências](#agradecimentos--referências)
 
 <!-- /TOC -->
 
@@ -20,9 +20,9 @@ Este repositório contém os templates utilizados pelo prof. Francisco Rodrigues
 | Modelos                        | Pasta          | Situação/Exemplo                                                                                                |
 | ------------------------------ | :------------: | :-------------------------------------------------------------------------------------------------------------: |
 | Atas de reunião                | AtaReuniao     | [Disponível](https://bitbucket.org/frchicoifs/template_doc_cbsi_ifs_latex/raw/master/AtaReuniao/AtaReuniao.pdf) |
-| Trabalhos científicos (TCC)    | ConclusaoCurso | Disponível                                                                                                      |
+| Trabalhos científicos (TCC)    | ConclusaoCurso | [Disponível](https://bitbucket.org/frchicoifs/template_doc_cbsi_ifs_latex/raw/master/ConclusaoCurso/documento.pdf)                                                                                                      |
 | Slides/Apresentação            | Slides         | [Disponível](https://bitbucket.org/frchicoifs/template_doc_cbsi_ifs_latex/raw/master/Slides/Modelo.pdf)        |
-| Exercícios                     | Exercícios     | Disponível                                                                                                      |
+| Exercícios                     | Exercicios     | [Disponível](https://bitbucket.org/frchicoifs/template_doc_cbsi_ifs_latex/raw/master/Exercicios/ModeloExercicios.pdf)                                                                                                         |
 | Avaliação                      |                | Pendente                                                                                                        |
 | Poster                         | Poster         | [Disponível](https://bitbucket.org/frchicoifs/template_doc_cbsi_ifs_latex/raw/master/Poster/PosterIFS.pdf)      |
 | Projeto de pesquisa / PROPEX   |                | Pendente                                                                                                        |
@@ -70,11 +70,14 @@ Fazer uso da classe `PosterIFS` conforme exemplo no diretório.
 # Contribuição
 
 * Registre seu pedido/erro [aqui](https://bitbucket.org/frchicoifs/template_doc_cbsi_ifs_latex/issues?status=new&status=open).
-* Você também pode contribuir colaborando com novos templates,reportando erros ou sugerindo atualizações. Clone o repositório e crie seu *Pull request*.
+* Você também pode contribuir colaborando com novos templates, reportando erros ou sugerindo atualizações. Clone o repositório e crie seu *Pull request*.
 
-# Agradecimentos
+# Agradecimentos / Referências
 
+* A profa. Catuxe pelo incentivo.
 * Ao prof. Gilson Pereira por descobrir a compatibilidade do modelo ueceTex2 com que a CBSI utiliza em seus TCC;
 * Ao prof. Fernando Náufel do Amaral e ao mantenedor do [site](http://angg.twu.net/LATEX/) por elaborar e disponibilizarem este modelo de Ata;
 * A equipe da [ueceTeX2](https://github.com/thiagodnf/uecetex2) por construir o modelo de trabalhos de conclusão de curso;
 * Ao site [Sharelatex](http://www.Sharelatex.com)/[Overleaf](http://overleaf.com/) por facilitar minha vida na hora de testar os templates.
+* [LATEX 2εfor class and package writers](https://www.latex-project.org/help/documentation/clsguide.pdf)
+* [How to develop your own document class — our experience](https://www.tug.org/TUGboat/tb29-3/tb93mansfield.pdf)

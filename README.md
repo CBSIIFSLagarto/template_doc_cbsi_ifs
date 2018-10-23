@@ -1,4 +1,4 @@
-<!-- TOC depthFrom:1 depthTo:6 orderedList:false -->
+<!-- TOC -->
 
 - [Sobre](#sobre)
 - [Situação/Disponibilidade de modelos](#situaçãodisponibilidade-de-modelos)
@@ -17,16 +17,16 @@ Este repositório contém os templates utilizados pelo prof. Francisco Rodrigues
 
 # Situação/Disponibilidade de modelos
 
-| Modelos                        | Pasta          | Situação   |
-| ------------------------------ | :------------: | :--------: |
-| Atas de reunião                | AtaReuniao     | Disponível |
-| Trabalhos científicos (TCC)    | ConclusaoCurso | Disponível |
-| Slides/Apresentação            | Slides         | Disponível |
-| Exercícios                     | Exercícios     | Disponível |
-| Avaliação                      |                | Pendente   |
-| Poster                         | Poster         | Disponível |
-| Projeto de pesquisa / PROPEX   |                | Pendente   |
-| Relatório de pesquisa / PROPEX |                | Pendente   |
+| Modelos                        | Pasta          | Situação/Exemplo                                                                                                |
+| ------------------------------ | :------------: | :-------------------------------------------------------------------------------------------------------------: |
+| Atas de reunião                | AtaReuniao     | [Disponível](https://bitbucket.org/frchicoifs/template_doc_cbsi_ifs_latex/raw/master/AtaReuniao/AtaReuniao.pdf) |
+| Trabalhos científicos (TCC)    | ConclusaoCurso | Disponível                                                                                                      |
+| Slides/Apresentação            | Slides         | [Disponível](https://bitbucket.org/frchicoifs/template_doc_cbsi_ifs_latex/raw/master/Slides/Modelo.pdf)        |
+| Exercícios                     | Exercícios     | Disponível                                                                                                      |
+| Avaliação                      |                | Pendente                                                                                                        |
+| Poster                         | Poster         | [Disponível](https://bitbucket.org/frchicoifs/template_doc_cbsi_ifs_latex/raw/master/Poster/PosterIFS.pdf)      |
+| Projeto de pesquisa / PROPEX   |                | Pendente                                                                                                        |
+| Relatório de pesquisa / PROPEX |                | Pendente                                                                                                        |
 
 # Ajuda
 

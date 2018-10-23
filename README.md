@@ -22,7 +22,7 @@ Este repositório contém os templates utilizados pelo prof. Francisco Rodrigues
 | Atas de reunião                | AtaReuniao     | [Disponível](https://bitbucket.org/frchicoifs/template_doc_cbsi_ifs_latex/raw/master/AtaReuniao/AtaReuniao.pdf) |
 | Trabalhos científicos (TCC)    | ConclusaoCurso | [Disponível](https://bitbucket.org/frchicoifs/template_doc_cbsi_ifs_latex/raw/master/ConclusaoCurso/documento.pdf)                                                                                                      |
 | Slides/Apresentação            | Slides         | [Disponível](https://bitbucket.org/frchicoifs/template_doc_cbsi_ifs_latex/raw/master/Slides/Modelo.pdf)        |
-| Exercícios                     | Exercicios     | [Disponível](https://bitbucket.org/frchicoifs/template_doc_cbsi_ifs_latex/raw/master/Exercicios/ModeloExercicios.pdf)                                                                                                         |
+| Exercícios                     | Exercicios     | [Disponível](https://bitbucket.org/frchicoifs/template_doc_cbsi_ifs_latex/raw/master/Exercicios/ModeloExercicio.pdf)                                                                                                         |
 | Avaliação                      |                | Pendente                                                                                                        |
 | Poster                         | Poster         | [Disponível](https://bitbucket.org/frchicoifs/template_doc_cbsi_ifs_latex/raw/master/Poster/PosterIFS.pdf)      |
 | Projeto de pesquisa / PROPEX   |                | Pendente                                                                                                        |

@@ -1,0 +1,66 @@
+\documentclass[roundedboxedsections,25pt]{PosterIFS}
+
+
+
+\input{siglas.tex}
+
+
+\title{Sugestão de Exemplo do uso do template de Poster do IFS/BSI para ser utilizado com o \LaTeX}
+
+\author[1]{Francisco R. Santos}
+\author[1]{Autor Dois}
+\author[2]{Autor Outra IE}
+
+\affil[ ]{\textit {\{frchico,email2\}@gmail.com}}
+\affil[1]{Coordenadoria de Sistemas de Informação - CBSI}
+\affil[2]{Outro Local - Sigla}
+\affil[ ]{Instituto Federal de Sergipe (IFS) \\ 
+        Caixa Postal 15.064 -- 91.501-970 -- Lagarto -- Brasil}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Begin of Document
+
+\begin{document}
+
+%define conference poster is presented at (appears as footer)
+
+\conference{{\bf IFS/CBSI 2018}, Semana de Apresentação em ... }
+
+\maketitle
+
+
+%%% Abstract
+% \begin{abstract}
+% \lipsum[1] 
+% \end{abstract}
+
+%%% Begin of Multicols-Enviroment
+\begin{multicols}{2}
+
+%%% Introduction
+\section*{Introdução}
+
+\input{Introducao.tex}
+
+\section*{Materiais e Métodos}
+\input{MateriaisEMetodos.tex}
+
+\section*{Resultados e Discussões}
+\input{ResultadosEDiscussoes.tex}
+
+\section*{Conclusões}
+\input{Conclusoes.tex}
+ 
+\end{multicols}
+
+\bibliography{bibliografia}
+\bibliographystyle{plain}
+
+
+
+
+\section*{Realização}
+\input{Realizacao}
+
+
+\end{document}

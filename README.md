@@ -1,9 +1,11 @@
 <!-- TOC depthFrom:1 depthTo:6 orderedList:false -->
 
 - [Sobre](#sobre)
-- [Conteúdo](#conteúdo)
+- [Situação/Disponibilidade de modelos](#situaçãodisponibilidade-de-modelos)
+- [Ajuda](#ajuda)
     - [Construção de atas](#construção-de-atas)
     - [Construção de TCC](#construção-de-tcc)
+    - [Construção de Poster](#construção-de-poster)
 - [Contribuição](#contribuição)
 - [Agradecimentos](#agradecimentos)
 
@@ -13,18 +15,20 @@
 
 Este repositório contém os templates utilizados pelo prof. Francisco Rodrigues em suas atividades no [Instituto Federal de Sergipe](http://www.ifs.edu.br).
 
-# Conteúdo
+# Situação/Disponibilidade de modelos
 
-| Conteúdo (Modelos)             | Pasta          | Situação   |
+| Modelos                        | Pasta          | Situação   |
 | ------------------------------ | :------------: | :--------: |
 | Atas de reunião                | AtaReuniao     | Disponível |
 | Trabalhos científicos (TCC)    | ConclusaoCurso | Disponível |
 | Slides/Apresentação            | Slides         | Disponível |
 | Exercícios                     | Exercícios     | Disponível |
 | Avaliação                      |                | Pendente   |
-| Poster                         |                | Pendente   |
+| Poster                         | Poster         | Disponível |
 | Projeto de pesquisa / PROPEX   |                | Pendente   |
 | Relatório de pesquisa / PROPEX |                | Pendente   |
+
+# Ajuda
 
 ## Construção de atas
 
@@ -59,6 +63,9 @@ Este repositório contém os templates utilizados pelo prof. Francisco Rodrigues
 
 Ver readme da pasta.
 
+## Construção de Poster
+
+Fazer uso da classe `PosterIFS` conforme exemplo no diretório.
 
 # Contribuição
 

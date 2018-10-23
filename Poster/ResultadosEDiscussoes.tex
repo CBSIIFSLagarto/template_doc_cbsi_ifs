@@ -1,0 +1,63 @@
+ \label{sec:resultados}
+
+Aqui serão demonstrados o uso de figura com sub figuras (figura principal é a \ref{fig:exemplo1} e contém como itens as figuras \ref{fig:subfiguraa}, \ref{fig:subfigurab} e \ref{fig:subfigurac}.
+
+\begin{figure}
+    \centering    
+    \begin{subfigure}{0.3\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{example-image-a}
+        \caption{} \label{fig:subfiguraa}
+    \end{subfigure}\hfil
+    \begin{subfigure}{0.3\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{example-image-b}
+        \caption{Legenda de B}\label{fig:subfigurab}
+    \end{subfigure}\hfil
+    \begin{subfigure}{0.3\textwidth}
+        \centering
+        \includegraphics[width=0.9\textwidth]{example-image-c}
+        \caption{} \label{fig:subfigurac}
+    \end{subfigure}%
+    \label{fig:exemplo1}
+    \caption{
+        Uso de 3 Figuras: \ref{fig:subfiguraa},\ref{fig:subfigurab} e \ref{fig:subfigurac}.
+    }
+\end{figure}
+
+É possível também colocar uma figura somente, como visto na \autoref{fig:exemplo2}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{example-image-c}        
+    \label{fig:exemplo2}
+    \caption{Uso uma única figura}
+\end{figure}
+
+
+O procedimento para a inclusão de tabelas também é semelhante e pode ser auxiliado pelo site \url{https://www.tablesgenerator.com/}, como mmostrado a na \autoref{table:1}.
+
+
+
+\begin{table}
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+    Name & ISO \\
+    \hline
+    Afghanistan & AF \\
+    Aland Islands & AX \\
+    Albania    &AL  \\
+    Algeria   &DZ \\
+    American Samoa & AS \\
+    Andorra & AD   \\
+    Angola & AO \\
+    \hline
+    \end{tabular}
+    \caption{Table, floating element}
+\label{table:1}
+\end{table}
+
+Para siglas, como a \ac{bsi}, recomendamos o armazenamento no arquivo siglas.tex. Assim, o gerenciamento do uso da sigla \ac{bsi} é feito automaticamente.  
+
+Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.

@@ -22,7 +22,7 @@ Este repositório contém os templates utilizados pelo prof. Francisco Rodrigues
 | Slides/Apresentação            | Slides         | Disponível |
 | Exercícios                     | Exercícios     | Disponível |
 | Avaliação                      |                | Pendente   |
-| Poster                         |                | Pendente   |
+| Poster                         | Poster         | Disponível |
 | Projeto de pesquisa / PROPEX   |                | Pendente   |
 | Relatório de pesquisa / PROPEX |                | Pendente   |
 

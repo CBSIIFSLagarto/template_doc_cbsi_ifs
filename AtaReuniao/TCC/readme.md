@@ -7,13 +7,13 @@
 
 ### Preparação do Trabalho
 
-1. Realizar o upload no google drive;
+1. Realizar o upload do arquivo [Barema TCC](./Barema%20TCC.xlsx) no Google Drive;
 2. Compartilhar o arquivo com os membros da banca
 3. A planilha "Dados Básicos" do arquivo [Barema TCC](./Barema%20TCC.xlsx) deverá ser preenchido pelo orientador.
 
 ## Execução 
 
-4. Os avaliadores ficarão com suas respectivas planilhas.
+4. Os avaliadores ficarão com suas respectivas planilhas para preenchimento das notas.
 
 ## Impressão das atas
 

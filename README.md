@@ -20,6 +20,7 @@ Este repositório contém os templates utilizados pelo prof. Francisco Rodrigues
 | Modelos                        | Pasta          | Situação/Exemplo                                                                                                |
 | ------------------------------ | :------------: | :-------------------------------------------------------------------------------------------------------------: |
 | Atas de reunião                | AtaReuniao     | [Disponível](/AtaReuniao/AtaReuniao.pdf) |
+|  [TCC CADS](https://github.com/CBSIIFSLagarto/template_doc_cbsi_ifs/tree/master/CADS/TCC)                      | [CADS/TCC](https://github.com/CBSIIFSLagarto/template_doc_cbsi_ifs/tree/master/CADS/TCC)       | [Disponível](https://www.overleaf.com/read/qxjbktcbvzwd#3b6f77)                                                                                                      |
 | Trabalhos científicos (TCC)    | ConclusaoCurso | [Disponível](/ConclusaoCurso/documento.pdf)                                                                                                      |
 | Atas de reunião TCC            | AtaReuniao/TCC | [Disponível](/AtaReuniao/TCC/readme.md) |
 | Slides/Apresentação            | Slides         | [Disponível](/Slides/Modelo.pdf)        |

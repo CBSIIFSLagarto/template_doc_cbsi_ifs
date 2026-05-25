@@ -11,12 +11,12 @@
 1. Acesse [overleaf.com](https://www.overleaf.com)
 2. Clique em **"New Project"**
 3. Selecione **"Upload Project"**
-4. Faça upload do arquivo ZIP OU selecione todos os arquivos e pastas
+4. Faça upload do conteúdo da pasta [CADS/TCC](https://github.com/CBSIIFSLagarto/template_doc_cbsi_ifs/edit/master/CADS/TCC/)
 
 ### Passo 3: Verificar Estrutura
 Após o upload, confirme que a estrutura está assim:
 ```
-📁 Projeto
+📁 Seu projeto (pasta raiz)
 ├── 📄 documento.tex
 ├── 📄 config.tex
 ├── 📂 lib/
@@ -31,9 +31,11 @@ Após o upload, confirme que a estrutura está assim:
 
 ### Passo 4: Primeira Compilação
 1. Certifique-se que `documento.tex` está selecionado como arquivo principal
-2. Clique em **"Recompile"**
-3. ⏱️ A primeira compilação pode demorar 1-2 minutos
-4. ✅ Se aparecer o PDF, está funcionando!
+   1. Vá em File --> Settings --> Compiler
+   1. Ajuste para o arquivo `documento.tex`
+3. Clique em **"Recompile"**
+4. ⏱️ A primeira compilação pode demorar 1-2 minutos
+5. ✅ Se aparecer o PDF, está funcionando!
 
 ---
 
